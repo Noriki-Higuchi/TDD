@@ -19,11 +19,11 @@ class VacancyLevel extends Model
             return '×';
         }
 
-        if ($this->remainingCount === 4) {
+        if ($this->remainingCount < 5) {
             return '△';
         }
 
-        if ($this->remainingCount === 5) {
+        if ($this->remainingCount <= 5) {
             return '◎';
         }
     }
