@@ -28,6 +28,11 @@ class VacancyLevel extends Model
         }
     }
 
+    public function __toString()
+    {
+        return $this->mark();
+    }
+
     public function slug(): string
     {
         if ($this->remainingCount === 0) {
